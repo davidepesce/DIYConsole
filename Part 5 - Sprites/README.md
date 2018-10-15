@@ -1,1 +1,1 @@
-The code for the post [#DIYConsole – Part 5: Sprites]()
+The code for the post [#DIYConsole – Part 5: Sprites](https://github.com/davidepesce/DIYConsole/tree/master/Part%205%20-%20Sprites)
