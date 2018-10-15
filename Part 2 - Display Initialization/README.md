@@ -1,0 +1,1 @@
+The code for the post [#DIYConsole – Part 2: Display initialization](https://www.davidepesce.com/2018/09/12/diyconsole-part-2-display-initialization/)
