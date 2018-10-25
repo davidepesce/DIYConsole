@@ -1,1 +1,1 @@
-The code for the post [#DIYConsole - Part 6: Text and fonts]()
+The code for the post [#DIYConsole - Part 6: Text and fonts](https://www.davidepesce.com/2018/10/25/diyconsole-part-6-text-and-fonts/)
