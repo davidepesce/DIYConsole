@@ -1,0 +1,1 @@
+The code for the post [#DIYConsole - Part 7: Graphics library optimization]()
