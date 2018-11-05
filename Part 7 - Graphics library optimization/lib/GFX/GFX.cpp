@@ -206,7 +206,7 @@ void GFX::begin() {
 void GFX::update() {
     uint16_t buffer[64];
     
-    // By default, all the lines need to be redrawn
+    // By default, check if all lines need to be redrawn
     int startY = 0;
     int stepY = 1;
     int y;
