@@ -94,7 +94,7 @@ void loop() {
             else
                 ships[i].theta -= 360;
         }
-        ships[i].theta += max(min(3 * (thetaTarget - ships[i].theta), 180), -180) * deltaTime;
+        ships[i].theta += max(min(3 * (int)(thetaTarget - ships[i].theta), 180), -180) * deltaTime;
 
         // Update starship position
         float xSpeed = 0.5 * (ships[i].xTarget - ships[i].x) * (1 / (1 + 0.1 * fabs(thetaTarget - ships[i].theta)));
