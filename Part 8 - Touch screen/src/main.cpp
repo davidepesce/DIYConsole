@@ -141,14 +141,17 @@ void loop() {
     // Map from touchscreen coordinates to screen coordinates
     int tx = map(touchPoint.x, TS_MINX, TS_MAXX, 0, 320);
     int ty = map(touchPoint.y, TS_MINY, TS_MAXY, 0, 480);
-    // Set target point for starship movement
-    int xTarget = map(tx, 30, 280, 16, 304);
-    int yTarget = map(ty, 320, 460, 144, 304);
-    xTarget = min(max(xTarget, 16), 304);
-    yTarget = min(max(yTarget, 144), 304);
-    // Move starship a step towards the target
-    starship.x += 24.0 * ((float)xTarget - starship.x) * deltaTime;
-    starship.y += 24.0 * ((float)yTarget - starship.y) * deltaTime;
+    // Ignore touches outside input area
+    if(ty > 320) {
+      // Set target point for starship movement
+      int xTarget = map(tx, 30, 280, 16, 304);
+      int yTarget = map(ty, 320, 460, 144, 304);
+      xTarget = min(max(xTarget, 16), 304);
+      yTarget = min(max(yTarget, 144), 304);
+      // Move starship a step towards the target
+      starship.x += 24.0 * ((float)xTarget - starship.x) * deltaTime;
+      starship.y += 24.0 * ((float)yTarget - starship.y) * deltaTime;
+    }
   }
 
   // Draw starship
